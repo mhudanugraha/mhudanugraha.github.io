@@ -1,0 +1,214 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{array}
+
+% Colors
+\definecolor{primary}{RGB}{0,102,204}
+\definecolor{secondary}{RGB}{64,64,64}
+\definecolor{accent}{RGB}{0,153,76}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    citecolor=primary
+}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% List formatting
+\setlist[itemize]{nosep,left=0pt,itemsep=1pt,topsep=2pt}
+\renewcommand{\labelitemi}{$\bullet$}
+
+% Custom commands
+\newcommand{\experience}[4]{%
+    \noindent\textbf{#1} \hfill \textit{#2}\\
+    \textit{#3} \hfill #4\vspace{2pt}
+}
+
+\newcommand{\education}[4]{%
+    \noindent\textbf{#1} \hfill \textit{#2}\\
+    \textit{#3} \hfill #4\vspace{2pt}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Compact spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries\color{primary} Muhammad Huda Nugraha}\\[3pt]
+    \href{mailto:hudanugraha12@gmail.com}{hudanugraha12@gmail.com} $\mid$
+    \href{https://www.linkedin.com/in/mhudanugraha}{linkedin.com/in/mhudanugraha} $\mid$
+    +62 852-6116-1550
+\end{center}
+
+\vspace{-2pt}
+
+% Overview
+\section*{OVERVIEW}
+\vspace{-2pt}
+A results-driven \textbf{Quality Assurance Engineer} with \textbf{2+ years of hands-on experience} in software testing, test automation, and API validation within high-stakes banking and financial technology environments. Demonstrated expertise in building production-grade automation frameworks using \textbf{Appium, Maestro, and Rest-Assured}, with a strong foundation in \textbf{SDLC, STLC, Agile/Scrum} methodologies. Track record of \textbf{60\%+ reduction in test execution time} through strategic script refactoring and reusable automation architecture. Passionate about elevating software quality through continuous improvement, meticulous defect analysis, and end-to-end test coverage. Committed to delivering reliable, scalable QA solutions that accelerate development cycles and protect production stability.
+
+\vspace{2pt}
+
+% Education
+\section*{EDUCATION}
+
+\education{B.Sc. Informatics Engineering}{Sep 2020 -- Jan 2024}{University of Brawijaya, Indonesia}{GPA: 3.78/4.00}
+
+\textit{Relevant Courses:} Software Engineering, Computer Networks, Algorithms \& Data Structures, Database Systems, Software Testing \& Quality Assurance\\
+\textit{Achievement:} Top 5\% of graduating cohort; maintained Dean's List-equivalent GPA throughout studies
+
+\vspace{2pt}
+
+% Working Experience
+\section*{WORKING EXPERIENCE}
+
+\experience{QA Automation Engineer}{Sep 2024 -- Present}{PT. Bank Negara Indonesia Tbk. (BNI), Indonesia}{}
+
+Lead automation engineering for \textbf{Wondr by BNI}, driving mobile and API test automation strategy to ensure platform reliability and accelerate release cycles.
+
+\textit{\textbf{Key Contributions \& Achievements:}}
+\begin{itemize}
+    \item \textbf{Mobile Automation Framework Development (Appium/Maestro):} Architected and implemented \textbf{100+ automated test cases} for mobile regression using Appium and Maestro frameworks. Engineered a modular, Page Object Model-based architecture enabling high test reusability across app versions. \textcolor{accent}{\textbf{Impact:}} Drastically reduced manual regression effort, enabling same-day regression validation on sprint releases
+    \item \textbf{API Regression Automation (Rest-Assured):} Developed and maintained a comprehensive REST API regression suite covering \textbf{10+ core banking features}. Refactored legacy scripts into dynamic, data-driven frameworks with parameterized test data management and response schema validation. \textcolor{accent}{\textbf{Impact:}} \textbf{60\% reduction in script execution time}; improved test maintainability and onboarding efficiency for new QA team members
+    \item \textbf{CI/CD Integration \& Quality Gates:} Integrated automated test suites with \textbf{Jenkins} pipelines to enforce quality gates on every build, enabling shift-left testing and early defect detection before code merge. \textcolor{accent}{\textbf{Impact:}} Reduced feedback loop from days to hours, accelerating sprint velocity
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Quality Assurance Engineer}{Feb 2024 -- Sep 2024}{PT. Bank Negara Indonesia Tbk. (BNI), Indonesia}{}
+
+Drove end-to-end quality assurance for \textbf{Wondr by BNI}, a high-traffic retail banking mobile application serving millions of users, ensuring platform stability and regulatory compliance across release cycles.
+
+\textit{\textbf{Key Contributions \& Achievements:}}
+\begin{itemize}
+    \item \textbf{Large-Scale Test Execution \& Defect Management:} Designed and executed \textbf{700+ test cases} across Integration Testing (IT), Acceptance Testing (AT), and full regression cycles, maintaining comprehensive traceability matrices to ensure feature completeness and risk coverage. Identified, documented, and tracked \textbf{80+ defects} in collaboration with cross-functional development teams, achieving rapid resolution turnaround. \textcolor{accent}{\textbf{Impact:}} Ensured zero critical-severity escapes to production on major release milestones
+    \item \textbf{Test Documentation:} Created detailed test documentation aligned with user stories and Figma designs to ensure comprehensive coverage and clear traceability
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Testing Specialist Intern -- Custody \& FA System}{Feb 2023 -- Jun 2023}{PT CIMB Niaga Tbk., Indonesia}{}
+
+Contributed to software quality assurance for two concurrent enterprise-grade \textbf{Custody and Treasury} financial system projects, gaining deep exposure to structured testing workflows in a regulated banking environment.
+
+\textit{\textbf{Key Contributions \& Achievements:}}
+\begin{itemize}
+    \item \textbf{Custody System Test Design:} Independently authored \textbf{50 comprehensive test scripts} (positive and negative scenarios) for the Custody project based on detailed System Design Documents (SDD), covering boundary conditions, data integrity checks, and functional edge cases. \textcolor{accent}{\textbf{Impact:}} Delivered complete test coverage documentation adopted by the permanent QA team
+    \item \textbf{Treasury System Integration \& Acceptance Testing:} Executed \textbf{150 System Integration Tests (SIT)} for the Treasury project, validating end-to-end transaction flows and system interoperability. Evaluated and reviewed \textbf{200 User Acceptance Test (UAT) scripts} across both projects, ensuring alignment with business requirements. \textcolor{accent}{\textbf{Impact:}} Contributed to on-schedule project delivery with zero major post-UAT defects
+    \item \textbf{Test Case Matrix Development:} Independently designed a \textbf{Test Case Matrix} framework as an intern, providing structured traceability between requirements and test coverage -- a deliverable later adopted into the team's standard QA workflow. \textcolor{accent}{\textbf{Impact:}} Recognized for fast professional adaptation and proactive contribution beyond intern scope
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Practicum Assistant -- Computer Networking Course}{Aug 2022 -- Dec 2022}{Faculty of Computer Science, University of Brawijaya, Indonesia}{}
+
+Selected by faculty to lead hands-on computer networking practicum sessions, demonstrating strong command of networking fundamentals and ability to communicate complex technical concepts clearly.
+
+\textit{\textbf{Key Contributions \& Achievements:}}
+\begin{itemize}
+    \item Facilitated laboratory practicum sessions for \textbf{2 classes of 70+ students}, covering network protocols, subnetting, routing, and packet analysis using Cisco Packet Tracer and Wireshark
+    \item Designed and assessed practicum assignments aligned with course learning outcomes, providing detailed feedback to support student comprehension and skill development
+    \item \textcolor{accent}{\textbf{Impact:}} Achieved \textbf{100\% passing rate} across both classes -- highest recorded outcome for the practicum course in that semester
+\end{itemize}
+
+\vspace{2pt}
+
+% Technical Skills
+\section*{TECHNICAL SKILLS \& COMPETENCIES}
+
+\textbf{Test Automation Frameworks:} Appium (Mobile Automation -- Android/iOS), Maestro (Mobile UI Testing), Rest-Assured (API Automation), Cucumber (BDD/Gherkin), Selenium (Web UI)
+
+\textbf{API Testing \& Integration:} Postman (Manual \& Automated Collections), REST API Testing, Response Validation, Schema Testing, Contract Testing, Environment-based Configuration
+
+\textbf{Programming \& Scripting:} Java (Primary), JavaScript, Oracle SQL -- with hands-on application in automation scripting, data-driven test frameworks, and database query validation
+
+\textbf{CI/CD \& DevOps Tools:} Jenkins (Pipeline Integration, Quality Gates), Git (Version Control, Branch Management), Docker (Basic Containerization Awareness)
+
+\textbf{Test Management \& Tracking:} Jira (Bug Tracking, Sprint Management, Test Reporting), Test Case Design (Equivalence Partitioning, Boundary Value Analysis, Decision Tables)
+
+\textbf{Database, Search \& Cache Systems:} DBeaver, Oracle SQL, Redis, Elasticsearch -- for backend validation, data integrity checks, search index verification, and cache state verification in test scenarios
+
+\textbf{Development Environments:} IntelliJ IDEA, VS Code, Postman, Git CLI
+
+\textbf{Methodologies \& Frameworks:} Agile/Scrum, SDLC, STLC, Shift-Left Testing, Risk-Based Testing, Regression Testing Strategy, Black-Box \& Gray-Box Testing
+
+\textbf{Soft Skills:} Analytical Problem-Solving, Cross-functional Collaboration, Technical Documentation, Attention to Detail, Adaptability in Fast-Paced Environments
+
+\vspace{2pt}
+
+% Organization
+\section*{LEADERSHIP \& ORGANIZATIONAL EXPERIENCE}
+
+\experience{Head of Advocacy \& Student Welfare}{Feb 2022 -- Dec 2022}{EMIF FILKOM UB -- Student Executive Board, Faculty of Computer Science}{}
+\begin{itemize}
+    \item Led a division of \textbf{7 staff members}, overseeing the planning, execution, and evaluation of \textbf{5 strategic work programs} serving 200+ informatics engineering students
+    \item Acted as primary liaison between the student body and faculty administration, resolving academic and non-academic concerns with diplomatic effectiveness
+    \item Conducted performance evaluations and provided mentorship to staff, fostering accountability and professional growth within the team
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Staff -- Advocacy \& Student Welfare}{Mar 2021 -- Jan 2022}{EMIF FILKOM UB -- Student Executive Board, Faculty of Computer Science}{}
+\begin{itemize}
+    \item Managed the \textbf{Course Registration (KRS) Crisis Centre} and Short-Semester (SP) programs, providing real-time information dissemination and resolution support for scheduling conflicts and class availability issues affecting hundreds of students
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Staff Advisor -- New Student Orientation}{Jun 2021 -- Nov 2021}{IF ELSE FILKOM UB}{}
+\begin{itemize}
+    \item Mentored \textbf{16 incoming students} through the department orientation program, leading weekly mentoring sessions and providing academic and social integration guidance
+\end{itemize}
+
+\vspace{4pt}
+
+\experience{Vice Chairman -- Public Relations Division}{Oct 2020 -- Nov 2020}{APPTICS, Faculty of Computer Science}{}
+\begin{itemize}
+    \item Assisted the division head in leading the team; successfully executed information dissemination for the faculty inauguration night, engaging \textbf{300+ audience members}
+\end{itemize}
+
+\vspace{2pt}
+
+% Certifications
+\section*{CERTIFICATIONS}
+
+\begin{itemize}
+    \item \textbf{ISTQB Foundation Level (CTFL)} -- International Software Testing Qualifications Board, via Udemy \hfill \textit{Apr 2025}
+    \item \textbf{Foundations of User Experience (UX) Design} -- Google / Coursera \hfill \textit{Oct 2023}
+\end{itemize}
+
+\vspace{2pt}
+
+% References
+\section*{PROFESSIONAL REFERENCES}
+
+\begin{itemize}
+    \item \textbf{Saiful Fahmi} -- QA Manager, PT. Bank Negara Indonesia Tbk. $\mid$ \href{mailto:Saiful.Fahmi@bni.co.id}{Saiful.Fahmi@bni.co.id} $\mid$ +62 856-9468-2054
+    \item \textbf{Muhammad Aminullah} -- Lead Automation Engineer, PT. Bank Negara Indonesia Tbk. $\mid$ \href{mailto:Muhammad.Aminullah@bni.co.id}{Muhammad.Aminullah@bni.co.id} $\mid$ +62 851-2135-1811
+\end{itemize}
+
+\end{document}
