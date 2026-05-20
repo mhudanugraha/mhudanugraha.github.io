@@ -18,7 +18,7 @@ const dockItems = [
   },
   { 
     icon: Linkedin, 
-    href: "https://www.linkedin.com/in/mhudanugraha", 
+    href: "https://www.linkedin.com/in/mhudanugraha/", 
     label: "LinkedIn",
     target: "_blank"
   },
