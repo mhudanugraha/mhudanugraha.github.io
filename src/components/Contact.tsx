@@ -76,18 +76,10 @@ export function Contact() {
 export function Footer() {
   return (
     <footer className="py-8 border-t border-white/10">
-      <div className="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-muted-foreground text-sm">
+      <div className="container mx-auto px-6 max-w-5xl flex items-center justify-center">
+        <p className="text-muted-foreground text-sm text-center">
           © {new Date().getFullYear()} Muhammad Huda Nugraha. All rights reserved.
         </p>
-        <div className="flex gap-4">
-          <a href="https://www.linkedin.com/in/mhudanugraha" className="text-sm text-muted-foreground hover:text-white transition-colors">
-            LinkedIn
-          </a>
-          <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
-            GitHub
-          </a>
-        </div>
       </div>
     </footer>
   );
