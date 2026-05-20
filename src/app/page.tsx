@@ -4,7 +4,8 @@ import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
-import { Contact, Footer } from "@/components/Contact";
+import { Footer } from "@/components/Contact";
+import { FloatingContactDock } from "@/components/FloatingContactDock";
 
 export default function Home() {
   return (
@@ -16,9 +17,9 @@ export default function Home() {
         <Experience />
         <Projects />
         <Skills />
-        <Contact />
       </div>
       <Footer />
+      <FloatingContactDock />
     </main>
   );
 }

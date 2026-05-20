@@ -18,10 +18,10 @@ export function Hero() {
           >
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white/10 glass p-1 shadow-2xl relative flex items-center justify-center overflow-hidden">
               <div className="relative w-full h-full rounded-full overflow-hidden">
-                <Image 
-                  src="/profile.jpg" 
-                  alt="Muhammad Huda Nugraha" 
-                  fill 
+                <Image
+                  src="/profile.jpg"
+                  alt="Muhammad Huda Nugraha"
+                  fill
                   className="object-cover"
                   priority
                 />
@@ -60,7 +60,7 @@ export function Hero() {
               </a>
             </Button>
             <Button size="lg" variant="glass" className="rounded-full px-8" asChild>
-              <a href="#contact">Contact Me</a>
+              <a href="mailto:hudanugraha12@gmail.com">Contact Me</a>
             </Button>
           </motion.div>
 
