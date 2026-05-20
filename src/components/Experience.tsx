@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Badge } from "./ui/badge";
 
 const experiences = [
   {
     role: "QA Automation Engineer",
     company: "PT. Bank Negara Indonesia Tbk. (BNI)",
+    logo: "/assets/bni-icon.png",
     period: "Sep 2024 - Present",
     description: "Lead automation engineering for Wondr by BNI, driving mobile and API test automation strategy to ensure platform reliability and accelerate release cycles.",
     highlights: [
@@ -18,6 +20,7 @@ const experiences = [
   {
     role: "Quality Assurance Engineer",
     company: "PT. Bank Negara Indonesia Tbk. (BNI)",
+    logo: "/assets/bni-icon.png",
     period: "Feb 2024 - Sep 2024",
     description: "Drove end-to-end quality assurance for Wondr by BNI, a high-traffic retail banking mobile application serving millions of users.",
     highlights: [
@@ -29,6 +32,7 @@ const experiences = [
   {
     role: "Testing Specialist Intern",
     company: "PT CIMB Niaga Tbk.",
+    logo: "/assets/cimb-icon.png",
     period: "Feb 2023 - Jun 2023",
     description: "Contributed to software QA for enterprise-grade Custody and Treasury financial system projects.",
     highlights: [
@@ -66,7 +70,18 @@ export function Experience() {
             >
               <div className="md:w-1/4 flex-shrink-0">
                 <p className="text-sm text-muted-foreground font-medium mb-2">{exp.period}</p>
-                <Badge variant="glass" className="mb-4">{exp.company}</Badge>
+                <Badge variant="glass" className="mb-4 inline-flex items-center gap-2">
+                  {exp.logo && (
+                    <Image
+                      src={exp.logo}
+                      alt={exp.company}
+                      width={16}
+                      height={16}
+                      className="object-contain"
+                    />
+                  )}
+                  <span>{exp.company}</span>
+                </Badge>
               </div>
               <div className="md:w-3/4">
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-purple-400 transition-colors">
