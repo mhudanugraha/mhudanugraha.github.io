@@ -3,6 +3,7 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{mathptmx}
 \usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -13,9 +14,10 @@
 \usepackage{array}
 
 % Colors
-\definecolor{primary}{RGB}{0,102,204}
-\definecolor{secondary}{RGB}{64,64,64}
-\definecolor{accent}{RGB}{0,153,76}
+\definecolor{primary}{HTML}{2563EB}
+\definecolor{secondary}{HTML}{054D96}
+\definecolor{accent}{HTML}{009933}
+\definecolor{bodytext}{HTML}{333333}
 
 % Hyperlink setup
 \hypersetup{
@@ -26,7 +28,7 @@
 }
 
 % Section formatting
-\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\bfseries\color{secondary}}{}{0em}{}[\color{secondary}\titlerule]
 \titlespacing*{\section}{0pt}{8pt}{4pt}
 
 \titleformat{\subsection}{\large\bfseries}{}{0em}{}
@@ -55,10 +57,11 @@
 \setlength{\parskip}{0pt}
 
 \begin{document}
+\color{bodytext}
 
 % Header
 \begin{center}
-    {\Huge\bfseries\color{primary} Muhammad Huda Nugraha}\\[3pt]
+    {\Huge\bfseries\color{secondary} Muhammad Huda Nugraha}\\[3pt]
     \href{mailto:hudanugraha12@gmail.com}{hudanugraha12@gmail.com} $\mid$
     \href{https://www.linkedin.com/in/mhudanugraha}{linkedin.com/in/mhudanugraha} $\mid$
     +62 852-6116-1550

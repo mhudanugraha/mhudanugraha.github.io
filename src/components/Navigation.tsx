@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 const links = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
 ];
 
@@ -49,12 +48,6 @@ export function Navigation() {
               {link.name}
             </a>
           ))}
-          <a
-            href="mailto:hudanugraha12@gmail.com"
-            className="text-sm font-medium bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-md border border-white/10 transition-all"
-          >
-            Contact
-          </a>
         </nav>
       </div>
     </motion.header>

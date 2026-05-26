@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight, Link, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -59,23 +59,6 @@ export function Hero() {
                 View Work <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
-            <Button size="lg" variant="glass" className="rounded-full px-8" asChild>
-              <a href="mailto:hudanugraha12@gmail.com">Contact Me</a>
-            </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex items-center gap-6 text-muted-foreground"
-          >
-            <a href="https://www.linkedin.com/in/mhudanugraha" target="_blank" rel="noreferrer" className="hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
-              <Link className="w-6 h-6" />
-            </a>
-            <a href="mailto:hudanugraha12@gmail.com" className="hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
-              <Mail className="w-6 h-6" />
-            </a>
           </motion.div>
         </div>
       </div>

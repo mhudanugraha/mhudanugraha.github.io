@@ -20,7 +20,7 @@ export function About() {
           
           <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
             <p>
-              I'm a results-driven Quality Assurance Engineer with 2+ years of hands-on experience in software testing, test automation, and API validation within high-stakes banking and financial technology environments.
+              I&apos;m a results-driven Quality Assurance Engineer with 2+ years of hands-on experience in software testing, test automation, and API validation within high-stakes banking and financial technology environments.
             </p>
             <p>
               I have demonstrated expertise in building production-grade automation frameworks using Appium, Maestro, and Rest-Assured. My strong foundation in SDLC, STLC, and Agile/Scrum methodologies allows me to effectively integrate into fast-paced development teams.
