@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -55,8 +55,13 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 mb-12"
           >
             <Button size="lg" className="rounded-full px-8 bg-white text-black hover:bg-gray-200" asChild>
-              <a href="#projects">
+              <a href="#experience">
                 View Work <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+            <Button size="lg" variant="glass" className="rounded-full px-8" asChild>
+              <a href="/CV.pdf" download>
+                Download CV <Download className="ml-2 w-4 h-4" />
               </a>
             </Button>
           </motion.div>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const jetbrainsMono = JetBrains_Mono({
   variable: "--font-sans",
   subsets: ["latin"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body
-        className={`${inter.variable} min-h-screen bg-background font-sans text-foreground flex flex-col antialiased selection:bg-primary/20`}
+        className={`${jetbrainsMono.variable} min-h-screen bg-background font-sans text-foreground flex flex-col antialiased selection:bg-primary/20`}
       >
         <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#1e1b4b_100%)]"></div>
         {children}

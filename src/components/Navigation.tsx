@@ -33,12 +33,8 @@ export function Navigation() {
           : "bg-transparent py-6"
       )}
     >
-      <div className="container mx-auto px-6 max-w-5xl flex items-center justify-between">
-        <a href="#" className="text-xl font-bold tracking-tighter hover:text-primary/80 transition-colors">
-          MHN.
-        </a>
-
-        <nav className="hidden md:flex items-center gap-8">
+      <div className="container mx-auto px-6 max-w-5xl flex items-center justify-center">
+        <nav className="flex items-center gap-6 md:gap-8">
           {links.map((link) => (
             <a
               key={link.name}
